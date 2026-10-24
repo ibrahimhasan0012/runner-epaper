@@ -1,78 +1,167 @@
-# রানার (Runner) — সকালের খবরের কাগজ ও বাংলাদেশি ই-পেপার স্ট্যান্ড
+# Runner (রানার) — Distraction-Free Bangladeshi E-Paper Reader
 
 <p align="center">
-  <img src="assets/banner.png" alt="রানার (Runner) Banner" width="100%" />
+  <img src="assets/banner.png" alt="Runner E-Paper Banner" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter" alt="Flutter" />
-  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green" alt="Platforms" />
-  <img src="https://img.shields.io/badge/Ad--Block-Built--in-amber" alt="Ad Block" />
-  <img src="https://img.shields.io/badge/License-MIT-blue" alt="License" />
+  <a href="https://github.com/ibrahimhasan0012/runner-epaper/releases/latest"><img src="https://img.shields.io/github/v/release/ibrahimhasan0012/runner-epaper?style=flat-square&color=004D40&label=Release" alt="Latest Release" /></a>
+  <img src="https://img.shields.io/badge/Flutter-3.x-02569B?style=flat-square&logo=flutter" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Platforms-Android%20%7C%20iOS-2E7D32?style=flat-square" alt="Platforms" />
+  <img src="https://img.shields.io/badge/Target%20SDK-35%20%2F%2036-blue?style=flat-square" alt="Android SDK" />
+  <img src="https://img.shields.io/badge/Ad--Shield-Built--in-amber?style=flat-square" alt="Ad-Shield" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-black?style=flat-square" alt="License" /></a>
+  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome" />
 </p>
 
-> **"রানার চলেছে খবরের বোঝা হাতে, রানার চলেছে রানার..."**  
-> *— সুকান্ত ভট্টাচার্য*
+<p align="center">
+  <strong>An open-source, privacy-respecting client for browsing official physical print editions (E-Papers) of Bangladesh's leading newspapers without clutter, popups, or paywalls.</strong>
+</p>
 
-**রানার (Runner)** হলো বাংলাদেশের শীর্ষ দৈনিক সংবাদপত্রসমূহের মূল ছাপা সংস্করণের ই-পেপার (E-Paper) পড়ার জন্য একটি আধুনিক, পরিচ্ছন্ন, দ্রুত ও বিজ্ঞাপন-মুক্ত ওপেন-সোর্স মোবাইল অ্যাপ্লিকেশন। কোনো ফাইল ডাউনলোড বা জটিলতা ছাড়াই সরাসরি ব্রডশিট পত্রিকা পড়ার জন্য এটি বিশেষভাবে তৈরি।
-
----
-
-## 🌟 মূল বৈশিষ্ট্যসমূহ (Key Features)
-
-- 📰 **শীর্ষ জাতীয় ও ইংরেজি দৈনিক**: যুগান্তর, কালের কণ্ঠ, সমকাল, ইত্তেফাক, বাংলাদেশ প্রতিদিন, প্রথম আলো, নয়া দিগন্ত, ইনকিলাব, আজকের পত্রিকা, দেশ রূপান্তর, জনকণ্ঠ, The Daily Star এবং The Business Standard।
-- 🛡️ **ইনটেলিজেন্ট অ্যাড-ব্লকার**: ট্র্যাকার, পপ-আপ, ভিডিও ওভারলে এবং বিরক্তিকর ভাসমান বিজ্ঞাপন স্বয়ংক্রিয়ভাবে ব্লক করে।
-- 🌙 **নাইট রিডিং মোড (Night Mode)**: রাতের বেলা পড়ার জন্য স্মার্ট কালার ইনভার্সন—ছবি ও গ্রাফিক্স স্বাভাবিক রেখে সাদা পাতাকে আরামদায়ক ডার্ক থিমে রূপান্তর করে।
-- 🔍 **স্মার্ট জুম ও ব্রডশিট ভিউ**: সূক্ষ্ম ফন্টের খবর সহজে পড়ার জন্য ডেডিকেটেড ফ্লোটিং জুম কন্ট্রোল (`+`, `1x`, `-`) এবং পূর্ণাঙ্গ স্ক্রিন ভিউ।
-- 📅 **আর্কাইভ ও পুরোনো সংখ্যা**: ক্যালেন্ডার থেকে যেকোনো তারিখ বেছে নিয়ে যেকোনো দিনের পুরোনো পত্রিকা সরাসরি পড়ার সুবিধা।
-- 🎨 **আভিজাত্যময় বাংলা টাইপোগ্রাফি**: Google Fonts (`Hind Siliguri`) সমৃদ্ধ ডুয়েল থিম ইঞ্জিন (Warm Newsprint Light এবং OLED Midnight Dark)।
-- 💾 **অফলাইন প্রেফারেন্স**: `shared_preferences` ব্যবহার করে পছন্দের তালিকা (Favorites), থিম ও সর্বশেষ পঠিত পত্রিকা স্বয়ংক্রিয়ভাবে ডিভাইসে সংরক্ষিত থাকে।
-- 🚀 **নেটিভ শেয়ারিং**: Android / iOS এর নেটিভ শেয়ার শিটের মাধ্যমে এক ক্লিকেই পছন্দের পত্রিকা শেয়ারিং।
+<p align="center">
+  <a href="#-downloads">Download APK</a> •
+  <a href="#-features">Key Features</a> •
+  <a href="#-supported-newspapers">Supported Newspapers</a> •
+  <a href="#-building-from-source">Building from Source</a> •
+  <a href="#-privacy--security">Privacy Policy</a>
+</p>
 
 ---
 
-## 📱 ইনস্টলেশন ও সরাসরি ডাউনলোড (Direct APK Download)
+## 📖 Overview
 
-Google Play Store-এর সাবস্ক্রিপশন ফি ছাড়াই আপনি সরাসরি এই রিপোজিটরি থেকে সর্বশেষ প্রস্তুতকৃত রিলিজ APK ডাউনলোড করে ফোনে ইনস্টল করতে পারবেন:
+In Bangladesh, physical newspapers publish daily digital broadsheet replicas ("E-Papers"). However, reading them on mobile browsers is frequently hindered by aggressive overlay popups, intrusive trackers, and rigid desktop viewports.
 
-| সংস্করণ | ফাইল সাইজ | ডাউনলোড লিংক | বিবরণ |
-| :--- | :--- | :--- | :--- |
-| **Universal Release APK** | ~52 MB | [Releases](https://github.com/ibrahimhasan0012/runner-epaper/releases) | সব ধরনের অ্যান্ড্রয়েড ফোনের জন্য উপযুক্ত |
-| **ARM64-v8a Release APK** | ~20 MB | [Releases](https://github.com/ibrahimhasan0012/runner-epaper/releases) | আধুনিক Pixel ও 64-bit ডিভাইসের জন্য দ্রুত ও হালকা |
+**Runner (রানার)**—named in homage to Sukanta Bhattacharya's iconic poem celebrating the tireless courier of morning news—provides a polished, distraction-free reading stand. It strips away interstitial clutter, provides ergonomic zooming, offers a night reading filter, and preserves your reading history natively on your device.
 
 ---
 
-## 🛠️ রান ও বিল্ড করার নিয়মাবলী (Build Instructions)
+## ✨ Features
 
-### পূর্বশর্ত
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) (3.2.0+)
-- Android SDK (API 35/36)
+- 🛡️ **Intelligent Ad-Shield Engine**: Blocks third-party ad networks (`doubleclick`, `googlesyndication`, `taboola`, `eskimi`, `purplepatch`, etc.) at the navigation layer while injecting mutation observers to clear sticky video overlays and banners.
+- 🌙 **Smart Night Reading Mode**: Intelligent CSS filter that inverts white broadsheet canvas backgrounds into dark parchment while preserving the original natural colors of photographs and graphics.
+- 🔍 **Broadsheet Zoom & Fit Controls**: Dedicated floating zoom dock (`+`, `1x`, `-`) enabling effortless reading of fine print columns without pinch jitter.
+- 📅 **Edition Archive Picker**: Calendar date-picker to easily jump back to previous dates and read historical editions.
+- 🎨 **Dual Editorial Design System**:
+  - **Warm Newsprint (Light Mode)**: Inspired by physical parchment (`#F9F7F2`) with deep forest emerald accents (`#004D40`).
+  - **OLED Midnight (Dark Mode)**: True dark background (`#121212`) paired with refined Bangla typography ([Google Fonts *Hind Siliguri*](https://fonts.google.com/specimen/Hind+Siliguri)).
+- 📱 **Broadsheet vs. Mobile Viewport Switch**: Dynamically toggles between desktop user-agent broadsheets and responsive mobile layouts.
+- 💾 **100% Local Persistence**: Favorites, last-read papers, and theme choices are stored on-device using native `SharedPreferences`.
+- 🚀 **Native Sharing**: One-tap native system share sheet via `share_plus` to send article links directly via WhatsApp, Messenger, or Twitter.
 
-### সোর্স কোড থেকে বিল্ড:
+---
+
+## 📥 Downloads
+
+Ready-to-install release binaries are signed with a production keystore (supporting APK Signature Scheme v2/v3, targetSdk 35, and Android 15/16/17 compatibility):
+
+| Variant | Architecture | Size | Download | Compatibility |
+| :--- | :--- | :--- | :--- | :--- |
+| **Universal Release APK** | All ABIs (Fat APK) | ~52 MB | [**Download APK**](https://github.com/ibrahimhasan0012/runner-epaper/releases/download/v1.0.0/Runner-release.apk) | Recommended for all Android devices |
+| **ARM64-v8a Release APK** | 64-bit ARM | ~20 MB | [**Download APK**](https://github.com/ibrahimhasan0012/runner-epaper/releases/download/v1.0.0/Runner-arm64.apk) | Optimized for modern phones & Pixel |
+
+> **Note**: For sideloading on Android 14+, simply allow installation from your file manager or browser.
+
+---
+
+## 📰 Supported Newspapers
+
+Runner provides direct indexed access to official broadsheet portals across major national categories:
+
+### Top National Dailies
+- **যুগান্তর (Daily Jugantor)** — Complete daily broadsheet, no login required.
+- **কালের কণ্ঠ (Kaler Kantho)** — Direct full print edition.
+- **সমকাল (Daily Samakal)** — Full physical broadsheet replica.
+- **দৈনিক ইত্তেফাক (The Daily Ittefaq)** — Historic national publication.
+- **বাংলাদেশ প্রতিদিন (Bangladesh Pratidin)** — Highest circulation daily print edition.
+- **দৈনিক নয়া দিগন্ত (Daily Naya Diganta)** — Direct daily broadsheet.
+- **দৈনিক ইনকিলাব (Daily Inqilab)** — Full broadsheet access.
+- **প্রথম আলো (Prothom Alo)** — Official e-paper reader (free daily account support).
+- **আজকের পত্রিকা (Ajker Patrika)** — Regional and national coverage.
+- **দেশ রূপান্তর (Desh Rupantor)** — Complete daily edition.
+- **দৈনিক জনকণ্ঠ (Daily Janakantha)** — National daily broadsheet.
+- **যায়যায়দিন (Daily Jaijaidin)** — Full print edition.
+- **ভোরের কাগজ (Bhorer Kagoj)** — Free broadsheet edition.
+
+### English Dailies
+- **The Daily Star** — Bangladesh's premier English-language broadsheet.
+- **The Business Standard (TBS)** — In-depth business, economy, and financial analysis.
+
+### Business & Economy
+- **বণিক বার্তা (Bonik Barta)** — Bangladesh's leading business and commerce publication.
+
+---
+
+## 🏗️ Architecture & Tech Stack
+
+```text
+lib/
+├── data/
+│   └── newspapers_data.dart        # Curated catalog of verified e-paper portals
+├── models/
+│   └── newspaper.dart              # Newspaper domain entity & access models
+├── screens/
+│   ├── home_screen.dart            # Animated newsstand grid with live Bangla date
+│   └── epaper_reader_screen.dart   # Broadsheet webview reader with zoom & night filter
+├── services/
+│   ├── ad_blocker_service.dart     # JS/CSS clean-reader & domain filtering engine
+│   └── storage_and_share_service.dart # SharedPreferences & native share integration
+└── main.dart                       # App initialization & dynamic theme switcher
+```
+
+- **Framework**: [Flutter](https://flutter.dev) (Dart 3.x)
+- **Web Rendering**: [`webview_flutter`](https://pub.dev/packages/webview_flutter)
+- **Animations**: [`flutter_animate`](https://pub.dev/packages/flutter_animate)
+- **Typography**: [`google_fonts`](https://pub.dev/packages/google_fonts) (*Hind Siliguri*)
+- **Local Persistence**: [`shared_preferences`](https://pub.dev/packages/shared_preferences)
+- **Native Sharing**: [`share_plus`](https://pub.dev/packages/share_plus)
+- **Play Core Support**: `com.google.android.play:integrity:1.4.0`
+
+---
+
+## 🚀 Building from Source
+
+### Prerequisites
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (version 3.2.0 or higher)
+- Android SDK with platform tools (API 35/36)
+- Java 17+
+
+### Steps
 ```bash
-# ১. রিপোজিটরি ক্লোন করুন
+# 1. Clone the repository
 git clone https://github.com/ibrahimhasan0012/runner-epaper.git
 cd runner-epaper
 
-# ২. ডিপেন্ডেন্সি প্যাকেজ ডাউনলোড করুন
+# 2. Install dependencies
 flutter pub get
 
-# ৩. অ্যাপটি ফোনে বা এমুলেটরে রান করুন
+# 3. Run the app in debug mode
 flutter run
 
-# ৪. সরাসরি ইউনিভার্সাল রিলিজ APK তৈরি করুন
+# 4. Build a signed Universal Release APK
 flutter build apk --release
 
-# ৫. অ্যাপ বান্ডেল (.aab) তৈরি করুন
+# 5. Build an Android App Bundle (.aab)
 flutter build appbundle --release
 ```
 
 ---
 
-## 🔒 প্রাইভেসি পলিসি (Privacy & Data Safety)
-রানার (Runner) একটি সম্পূর্ণ প্রাইভেসি-ফার্স্ট অ্যাপ। কোনো ধরনের ইউজার ডেটা, ফোন নম্বর বা তথ্য ক্লাউডে সংগ্রহ বা বিক্রি করা হয় না। সমস্ত বুকমার্ক এবং থিম সেটিং কেবল ব্যবহারকারীর ফোনেই সংরক্ষিত থাকে।
+## 🔐 Privacy & Security
+
+Runner is built on strict privacy-first principles:
+- **Zero Telemetry**: We do not collect, store, or transmit any user data, identifiers, or analytics.
+- **Local-Only Preferences**: Bookmarked favorites, last-read papers, and theme choices never leave your device.
+- **Direct Web Access**: Connections to e-paper portals occur directly between your device and the respective official publisher websites.
 
 ---
 
-## 📄 লাইসেন্স
-এই প্রকল্পটি [MIT License](LICENSE)-এর অধীনে উন্মুক্ত।
+## ⚖️ Legal Disclaimer
+
+*Runner is an independent, open-source reader client that indexes publicly accessible web portals operated by newspaper publishers. All trademarks, mastheads, logos, and newspaper contents belong entirely to their respective copyright holders. Runner does not host, reproduce, relicense, or redistribute any copyrighted news publications.*
+
+---
+
+## 📄 License
+
+This project is open-source software licensed under the **[MIT License](LICENSE)**.
