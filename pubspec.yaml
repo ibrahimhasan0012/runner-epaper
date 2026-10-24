@@ -1,0 +1,31 @@
+name: bd_epaper_hub
+description: Distraction-free Bangladeshi Bangla E-Paper Reader for Android & iOS.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.8.0
+  url_launcher: ^6.3.0
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.2
+  shimmer: ^3.0.0
+  shared_preferences: ^2.3.3
+  share_plus: ^10.1.2
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+dependency_overrides:
+  shared_preferences_android: 2.3.4
+  path_provider_android: 2.2.15
